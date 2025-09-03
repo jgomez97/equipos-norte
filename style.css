@@ -31,11 +31,16 @@ body {
 .hero {
   height: 100vh;
   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-              url("hero-bg.jpg") center/cover no-repeat;
-  display: flex; justify-content: center; align-items: center;
-  text-align: center; color: #fff; padding: 20px;
+              url("https://images.unsplash.com/photo-1581091215367-59ab6a9c61b3?w=1600") center/cover no-repeat;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  text-align: center; 
+  color: #fff; 
+  padding: 20px;
   animation: bgZoom 20s infinite alternate ease-in-out;
 }
+
 .hero-text h1 { font-size: 3rem; animation: fadeInDown 1s ease; }
 .hero-text p { margin: 20px 0; font-size: 1.2rem; animation: fadeInUp 1.5s ease; }
 .btn {
@@ -109,3 +114,4 @@ body {
   from { background-size: 100%; }
   to { background-size: 110%; }
 }
+
