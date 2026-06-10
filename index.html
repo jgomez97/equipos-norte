@@ -3,110 +3,307 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Equipos y Servicios del Norte</title>
+  <meta name="description" content="Mantenimiento, reparación, venta de equipos, redes y desarrollo de software en Ciudad Juárez.">
+  <meta name="theme-color" content="#0a0a0a">
+  <title>Equipos y Servicios del Norte | Soluciones tecnológicas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header -->
-  <header class="header">
-    <div class="logo">
-      <img src="logo.png" alt="Logo">
-      <span>Equipos y Servicios del Norte</span>
-    </div>
-    <nav class="nav" id="navMenu">
-      <a href="#inicio">Inicio</a>
+  <header class="header" id="header">
+    <a class="brand" href="#inicio" aria-label="Ir al inicio">
+      <img src="logo.png" alt="Equipos y Servicios del Norte">
+      <span>Equipos y Servicios <b>del Norte</b></span>
+    </a>
+
+    <nav class="nav" id="navMenu" aria-label="Navegación principal">
+      <a class="active" href="#inicio">Inicio</a>
       <a href="#servicios">Servicios</a>
+      <a href="#productos">Productos</a>
       <a href="#nosotros">Nosotros</a>
       <a href="#ubicacion">Ubicación</a>
-      <a href="#contacto">Contacto</a>
+      <a class="nav-cta" href="#contacto">Cotizar ahora</a>
     </nav>
-    <div class="hamburger" id="hamburger">&#9776;</div>
+
+    <button class="menu-button" id="menuButton" type="button" aria-label="Abrir menú" aria-expanded="false">
+      <span></span>
+      <span></span>
+    </button>
   </header>
 
-  <!-- Hero -->
-  <section id="inicio" class="hero">
-    <div class="hero-text">
-      <h1>Soluciones Integrales en Tecnología</h1>
-      <p>Un negocio joven y dinámico que ofrece mantenimiento, reparación, venta de equipos y desarrollo de software a tu medida.</p>
-      <a href="#contacto" class="btn">Contáctanos</a>
-    </div>
-  </section>
-
-  <!-- Servicios -->
-  <section id="servicios" class="section">
-    <h2 class="section-title">Nuestros Servicios</h2>
-    <div class="cards">
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800" alt="Mantenimiento y Venta">
-        <h3>Mantenimiento y Venta</h3>
-        <p>Equipos de cómputo de última generación, con servicio preventivo y correctivo para garantizar un rendimiento óptimo.</p>
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero-glow glow-one"></div>
+      <div class="hero-glow glow-two"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow"><span></span> Tecnología que trabaja contigo</p>
+        <h1>Tu tecnología,<br><em>siempre lista.</em></h1>
+        <p class="hero-copy">Resolvemos, optimizamos y construimos las herramientas digitales que tu empresa o negocio necesita para avanzar.</p>
+        <div class="hero-actions">
+          <a href="#servicios" class="button button-light">
+            Explorar servicios
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="https://wa.me/19152567670?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20una%20cotizaci%C3%B3n." class="text-link" target="_blank" rel="noopener">Hablar con un experto</a>
+        </div>
       </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800" alt="Reparación de dispositivos">
-        <h3>Reparación</h3>
-        <p>Soluciones rápidas y confiables en reparación de computadoras, tablets, iPads y celulares de todas las marcas.</p>
-      </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800" alt="Desarrollo de software y apps">
-        <h3>Software & Apps</h3>
-        <p>Desarrollo de páginas web modernas, aplicaciones móviles Android/iOS y programas de escritorio adaptados a tus necesidades.</p>
-      </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1581090700227-4c4ef48a0062?w=800" alt="Redes y soporte técnico">
-        <h3>Redes y Soporte</h3>
-        <p>Instalación y configuración de redes empresariales y domésticas, soporte técnico remoto y en sitio.</p>
-      </div>
-    </div>
-  </section>
 
-  <!-- Nosotros -->
-  <section id="nosotros" class="section bg-light">
-    <h2 class="section-title">Sobre Nosotros</h2>
-    <p>
-      En <strong>Equipos y Servicios del Norte</strong> iniciamos con la visión de ser un aliado tecnológico confiable para empresas y particulares. 
-      Somos un proyecto nuevo, pero con un compromiso firme en ofrecer <strong>servicios de calidad, atención personalizada</strong> y soluciones que realmente funcionan.
-    </p>
-  </section>
-
-  <!-- Ubicación -->
-  <section id="ubicacion" class="section">
-    <h2 class="section-title">Ubicación</h2>
-    <p>Nos encontramos en <strong>Ciudad Juárez, Chihuahua</strong>. Brindamos atención en nuestra oficina y también servicio a domicilio según tus necesidades.</p>
-    <iframe 
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3354.06327337336!2d-106.421!3d31.6904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e76654f0e0f1af%3A0x5c1f3!2sCiudad%20Ju%C3%A1rez%2C%20Chihuahua!5e0!3m2!1ses!2smx!4v0000000000" 
-      width="100%" 
-      height="350" 
-      style="border:0;" 
-      allowfullscreen="" 
-      loading="lazy">
-    </iframe>
-  </section>
-
-  <!-- Contacto -->
-  <section id="contacto" class="section">
-    <h2 class="section-title">Contáctanos</h2>
-    <form class="form">
-      <input type="text" placeholder="Nombre" required>
-      <input type="email" placeholder="Correo electrónico" required>
-      <textarea placeholder="Mensaje" rows="5" required></textarea>
-      <button type="submit" class="btn">Enviar</button>
-    </form>
-    <div class="contact-info">
-      <h3>Atención Directa</h3>
-      <p><strong>Teléfono:</strong> <a href="tel:+526561234567">+52 (656) 123 4567</a></p>
-      <p><strong>Email:</strong> <a href="mailto:contacto@equiposyserviciosdelnorte.com">contacto@equiposyserviciosdelnorte.com</a></p>
-      <div class="social">
-        <a href="https://facebook.com" target="_blank">Facebook</a> | 
-        <a href="https://instagram.com" target="_blank">Instagram</a> | 
-        <a href="https://wa.me/526561234567" target="_blank">WhatsApp</a>
+      <div class="hero-panel reveal">
+        <div class="status-pill"><span></span> Atención disponible</div>
+        <p>Soporte técnico</p>
+        <strong>Rápido. Claro.<br>Sin complicaciones.</strong>
+        <div class="hero-panel-footer">
+          <span>Ciudad Juárez</span>
+          <span>Chihuahua, MX</span>
+        </div>
       </div>
-    </div>
-  </section>
 
-  <!-- Footer -->
+      <a class="scroll-indicator" href="#servicios" aria-label="Desplazarse a servicios">
+        <span>Descubre más</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
+      </a>
+    </section>
+
+    <section id="servicios" class="section services-section">
+      <div class="section-heading reveal">
+        <div>
+          <p class="eyebrow dark"><span></span> Lo que hacemos</p>
+          <h2>Soluciones que<br>sí resuelven.</h2>
+        </div>
+        <p>De una reparación urgente a una solución digital completa, trabajamos con atención cercana y resultados confiables.</p>
+      </div>
+
+      <div class="service-grid">
+        <article class="service-card reveal">
+          <div class="card-number">01</div>
+          <div class="service-image">
+            <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=1000&q=85" alt="Computadora portátil sobre un escritorio" loading="lazy">
+          </div>
+          <div class="service-body">
+            <h3>Mantenimiento y venta</h3>
+            <p>Equipos de cómputo y servicio preventivo o correctivo para mantener el mejor rendimiento.</p>
+            <span class="card-arrow">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </span>
+          </div>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="card-number">02</div>
+          <div class="service-image">
+            <img src="https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?auto=format&fit=crop&w=1000&q=85" alt="Técnico reparando componentes electrónicos" loading="lazy">
+          </div>
+          <div class="service-body">
+            <h3>Reparación de dispositivos</h3>
+            <p>Diagnóstico y reparación de computadoras, tablets, iPads y celulares de distintas marcas.</p>
+            <span class="card-arrow">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </span>
+          </div>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="card-number">03</div>
+          <div class="service-image">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1000&q=85" alt="Desarrollo de software en una computadora" loading="lazy">
+          </div>
+          <div class="service-body">
+            <h3>Software, web y apps</h3>
+            <p>Sitios web, aplicaciones móviles y programas de escritorio pensados para tus objetivos.</p>
+            <span class="card-arrow">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </span>
+          </div>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="card-number">04</div>
+          <div class="service-image">
+            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1000&q=85" alt="Servidores para redes empresariales" loading="lazy">
+          </div>
+          <div class="service-body">
+            <h3>Redes y soporte</h3>
+            <p>Instalación de redes para empresas y negocios, con soporte remoto y servicio en sitio.</p>
+            <span class="card-arrow">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="productos" class="section products-section">
+      <div class="section-heading reveal">
+        <div>
+          <p class="eyebrow"><span></span> Nuestro catálogo</p>
+          <h2>Equipamiento para<br>hacer más.</h2>
+        </div>
+        <p>Seleccionamos tecnología confiable para mejorar la operación, productividad y conectividad de tu empresa.</p>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card reveal">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1541807084-5c52b6b3adef?auto=format&fit=crop&w=1100&q=85" alt="Computadoras portátiles para empresas" loading="lazy">
+            <span class="product-tag">Equipos</span>
+          </div>
+          <div class="product-info">
+            <div>
+              <p>Productividad empresarial</p>
+              <h3>Computadoras y laptops</h3>
+            </div>
+            <a href="https://wa.me/19152567670?text=Hola%2C%20me%20interesa%20cotizar%20computadoras%20o%20laptops%20para%20mi%20empresa." target="_blank" rel="noopener" aria-label="Cotizar computadoras y laptops por WhatsApp">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="product-card reveal">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?auto=format&fit=crop&w=1100&q=85" alt="Accesorios y periféricos de cómputo" loading="lazy">
+            <span class="product-tag">Accesorios</span>
+          </div>
+          <div class="product-info">
+            <div>
+              <p>Operación y comodidad</p>
+              <h3>Componentes y periféricos</h3>
+            </div>
+            <a href="https://wa.me/19152567670?text=Hola%2C%20me%20interesa%20cotizar%20componentes%20o%20perif%C3%A9ricos%20para%20mi%20empresa." target="_blank" rel="noopener" aria-label="Cotizar componentes y periféricos por WhatsApp">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="product-card reveal">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1606904825846-647eb07f5be2?auto=format&fit=crop&w=1100&q=85" alt="Equipo de redes y conectividad empresarial" loading="lazy">
+            <span class="product-tag">Conectividad</span>
+          </div>
+          <div class="product-info">
+            <div>
+              <p>Infraestructura confiable</p>
+              <h3>Redes y conectividad</h3>
+            </div>
+            <a href="https://wa.me/19152567670?text=Hola%2C%20me%20interesa%20cotizar%20equipos%20de%20red%20y%20conectividad%20para%20mi%20empresa." target="_blank" rel="noopener" aria-label="Cotizar equipos de redes por WhatsApp">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <div class="products-cta reveal">
+        <p><strong>¿Buscas algo específico?</strong> Manejamos opciones de acuerdo con tus necesidades y presupuesto.</p>
+        <a href="https://wa.me/19152567670?text=Hola%2C%20estoy%20buscando%20un%20producto%20espec%C3%ADfico%20para%20mi%20empresa." class="button button-light" target="_blank" rel="noopener">
+          Consultar disponibilidad
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <section id="nosotros" class="about-section">
+      <div class="about-visual reveal">
+        <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1400&q=85" alt="Equipo colaborando en una mesa de trabajo" loading="lazy">
+        <div class="experience-badge">
+          <strong>100%</strong>
+          <span>Atención<br>personalizada</span>
+        </div>
+      </div>
+
+      <div class="about-copy reveal">
+        <p class="eyebrow dark"><span></span> Acerca de nosotros</p>
+        <h2>Un aliado tecnológico que habla claro.</h2>
+        <p>En <strong>Equipos y Servicios del Norte</strong> combinamos experiencia técnica, atención cercana y soluciones prácticas. Somos un proyecto joven con una meta muy concreta: hacer que la tecnología funcione para ti.</p>
+        <div class="values">
+          <div><span>01</span><p><strong>Diagnóstico honesto</strong>Te explicamos el problema y la mejor solución.</p></div>
+          <div><span>02</span><p><strong>Servicio a tu medida</strong>Cada empresa y negocio necesita algo distinto.</p></div>
+          <div><span>03</span><p><strong>Compromiso real</strong>Cuidamos tus equipos, tiempo e inversión.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="numbers-section" aria-label="Ventajas de nuestro servicio">
+      <div class="number-item reveal"><strong>4</strong><span>Áreas de<br>especialidad</span></div>
+      <div class="number-item reveal"><strong>1:1</strong><span>Atención<br>personalizada</span></div>
+      <div class="number-item reveal"><strong>360°</strong><span>Soluciones<br>integrales</span></div>
+      <div class="number-item reveal"><strong>Local</strong><span>Servicio en<br>Ciudad Juárez</span></div>
+    </section>
+
+    <section id="ubicacion" class="location-section">
+      <div class="location-copy reveal">
+        <p class="eyebrow"><span></span> Estamos cerca</p>
+        <h2>Servicio local,<br>respuesta directa.</h2>
+        <p>Atendemos en Ciudad Juárez, Chihuahua, con soporte remoto y servicio a domicilio según tus necesidades.</p>
+        <a href="https://maps.google.com/?q=Ciudad+Juarez+Chihuahua" class="button button-light" target="_blank" rel="noopener">
+          Abrir en Google Maps
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+      <div class="map-wrap reveal">
+        <iframe
+          title="Mapa de Ciudad Juárez, Chihuahua"
+          src="https://www.google.com/maps?q=Ciudad+Juarez,+Chihuahua&output=embed"
+          loading="lazy"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+
+    <section id="contacto" class="contact-section">
+      <div class="contact-intro reveal">
+        <p class="eyebrow dark"><span></span> Hablemos</p>
+        <h2>¿Qué necesitas resolver?</h2>
+        <p>Cuéntanos brevemente. Al enviar, abriremos WhatsApp con tu solicitud lista para comenzar la conversación.</p>
+        <a class="contact-line" href="tel:+19152567670">
+          <span class="contact-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.62 2.63a2 2 0 0 1-.45 2.11L8 9.73a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.85.29 1.73.5 2.63.62A2 2 0 0 1 22 16.92z"/></svg>
+          </span>
+          <span><small>WhatsApp</small><strong>+1 (915) 256-7670</strong></span>
+        </a>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm">
+        <div class="field-row">
+          <label>Nombre
+            <input id="name" type="text" placeholder="Tu nombre" autocomplete="name" required>
+          </label>
+          <label>Servicio
+            <select id="service" required>
+              <option value="" disabled selected>Selecciona una opción</option>
+              <option>Mantenimiento y venta</option>
+              <option>Reparación de dispositivos</option>
+              <option>Software, web y apps</option>
+              <option>Redes y soporte</option>
+              <option>Productos y equipo</option>
+              <option>Otro servicio</option>
+            </select>
+          </label>
+        </div>
+        <label>Mensaje
+          <textarea id="message" rows="5" placeholder="Describe brevemente lo que necesitas..." required></textarea>
+        </label>
+        <button class="button button-dark" type="submit">
+          Enviar por WhatsApp
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </button>
+      </form>
+    </section>
+  </main>
+
   <footer class="footer">
-    <p>© 2025 Equipos y Servicios del Norte. Todos los derechos reservados.</p>
+    <a class="brand footer-brand" href="#inicio">
+      <img src="logo.png" alt="">
+      <span>Equipos y Servicios <b>del Norte</b></span>
+    </a>
+    <p>Soluciones tecnológicas en Ciudad Juárez.</p>
+    <p>© <span id="year"></span> Todos los derechos reservados.</p>
   </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/19152567670?text=Hola%2C%20vi%20su%20p%C3%A1gina%20web%20y%20necesito%20informaci%C3%B3n." target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M27.3 4.7A15.8 15.8 0 0 0 2.5 23.8L.3 31.7l8.1-2.1A15.8 15.8 0 0 0 27.3 4.7ZM16 29a13 13 0 0 1-6.6-1.8l-.5-.3-4.8 1.3 1.3-4.7-.3-.5A13 13 0 1 1 16 29Zm7.1-9.7c-.4-.2-2.3-1.1-2.7-1.3-.4-.1-.6-.2-.9.2-.3.4-1 1.3-1.2 1.5-.2.3-.5.3-.9.1-2.3-1.1-3.8-2-5.3-4.6-.4-.7.4-.7 1.1-2.2.1-.3 0-.5-.1-.7l-1.2-2.9c-.3-.8-.7-.7-.9-.7h-.8c-.3 0-.7.1-1.1.5-.4.4-1.4 1.4-1.4 3.4s1.5 3.9 1.7 4.2c.2.3 2.9 4.4 7 6.2 2.6 1.1 3.6 1.2 4.9 1 1.5-.2 2.3-1.4 2.6-2 .3-.6.3-1.2.2-1.4-.2-.2-.6-.3-1-.5Z"/></svg>
+    <span>WhatsApp</span>
+  </a>
 
   <script src="script.js"></script>
 </body>
