@@ -147,7 +147,7 @@ button, input, select, textarea { font: inherit; }
   align-items: center;
   background:
     linear-gradient(100deg, rgba(0,0,0,.97) 0%, rgba(0,0,0,.83) 42%, rgba(0,0,0,.22) 100%),
-    url("https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=2000&q=90") center/cover;
+    url("assets/images/hero-company-v2.webp") center/cover;
   color: var(--white);
   display: grid;
   grid-template-columns: minmax(0, 1.3fr) minmax(280px, .7fr);
@@ -155,6 +155,20 @@ button, input, select, textarea { font: inherit; }
   overflow: hidden;
   padding: 140px clamp(24px, 7vw, 110px) 90px;
   position: relative;
+}
+
+.hero::before {
+  background: url("logo.png") center/contain no-repeat;
+  bottom: 110px;
+  content: "";
+  filter: invert(1) grayscale(1);
+  height: 76px;
+  mix-blend-mode: screen;
+  opacity: .38;
+  position: absolute;
+  right: clamp(24px, 3vw, 48px);
+  width: 76px;
+  z-index: 3;
 }
 
 .hero::after {
@@ -375,9 +389,24 @@ h1, h2, h3 { font-family: var(--font-display); }
   padding: 20px 22px;
 }
 
-.service-image { height: 205px; margin: 0 12px; overflow: hidden; }
+.service-image { height: 205px; margin: 0 12px; overflow: hidden; position: relative; }
 .service-image img { filter: grayscale(100%); height: 100%; object-fit: cover; transition: filter .5s ease, transform .6s ease; width: 100%; }
 .service-card:hover .service-image img { filter: grayscale(0); transform: scale(1.06); }
+
+.service-image::before,
+.product-image::before,
+.about-visual::before {
+  background: url("logo.png") center/contain no-repeat;
+  bottom: 12px;
+  content: "";
+  height: 60px;
+  mix-blend-mode: multiply;
+  opacity: .42;
+  position: absolute;
+  right: 12px;
+  width: 60px;
+  z-index: 3;
+}
 
 .service-body { display: flex; flex: 1; flex-direction: column; padding: 24px 22px 22px; }
 .service-body h3 { font-size: 1.25rem; letter-spacing: -.035em; margin-bottom: 12px; }
@@ -641,6 +670,7 @@ h1, h2, h3 { font-family: var(--font-display); }
   content: "";
   inset: 0;
   position: absolute;
+  z-index: 1;
 }
 
 .product-image img {
@@ -746,7 +776,7 @@ h1, h2, h3 { font-family: var(--font-display); }
   gap: 18px;
   padding: 24px 30px;
   position: absolute;
-  right: 0;
+  left: 0;
 }
 
 .experience-badge strong { font-family: var(--font-display); font-size: 2.2rem; }
@@ -902,6 +932,7 @@ h1, h2, h3 { font-family: var(--font-display); }
 
 .social-links .social-dot { fill: currentColor; }
 .social-links .youtube-play { fill: var(--black); }
+.social-links .tiktok-icon { fill: currentColor; }
 
 .whatsapp-float {
   align-items: center;
