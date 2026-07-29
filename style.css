@@ -892,10 +892,26 @@ h1, h2, h3 { font-family: var(--font-display); }
 .footer-legal { text-align: right; }
 
 .social-links {
-  display: flex;
-  gap: 9px;
-  justify-content: center;
-  margin-top: 14px;
+    display: flex;
+    gap: 9px;
+    justify-content: center;
+    margin-top: 14px;
+}
+
+.footer-email {
+    color: #c8c8c8;
+    display: inline-block;
+    font-size: 0.88rem;
+    margin-top: 8px;
+    text-decoration: none;
+    transition: color 180ms ease;
+}
+
+.footer-email:hover,
+.footer-email:focus-visible {
+    color: #fff;
+    text-decoration: underline;
+    text-underline-offset: 4px;
 }
 
 .social-links a {
